@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none; 
+}
+
+@media (max-width:500px) 
+{
+    @font-face{
+        font-family: 'PFRegalDisplayPro';
+        src: url(/Fuente/PFRegalDisplayPro-Black.ttf);
+        
+        font-family: 'BrandonGrotesque';
+        src: url(/Fuente/Brandon_Grotesque_black.otf);
+    }
+
+    header{
+        #fondo {display: none; }
+
+        #fondomo {
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            }
+
+        nav {  
+            #logo{
+            display: none;
+            }  
+            .registro {
+            display: none;}
+
+        .idioma{
+            display: none;}
+                
+        .navegador{
+            
+            display: flex;  
+            flex-direction: row;    
+                .circulo { margin: 8%  4% 0 10%;
+                color:#ffffff;
+                border-radius: 50%;
+                border: solid 3px #ffffff;
+                padding: 20px;
+                }
+                .menu {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 6vh;
+                    padding-left: 35vh;
+                    .bar {
+                            width: 40px;
+                            height: 3px;
+                            background-color: #ffffff;
+                            margin: 4px;
+                    }
+                }
+            }        
+        }
+    }
+        
+
+    main {
+        #lupa{
+            position: absolute;
+            top: 7vh;
+            left: 7vh;
+        }
+                      
+        #flecha {
+            position: absolute;
+            top: 107vh;
+            left: 18%;
+            width: 3vh;
+        }        
+        
+        #redes { display: none;}
+        
+        #botones {
+            .fuenteI {
+                font-family: 'BrandonGrotesque';
+            }
+            .derecha {
+                position: absolute;
+                top: 21vh;
+                right: 6vh;
+                padding: 11px 220px 11px 27px;
+                text-align: left;
+                border: 1px solid #B4B7B7;
+                border-radius: 50px;
+                background-color: transparent;
+                font-size: 20px;
+                color: #B4B7B7;
+            }        
+        
+            .izquierda { 
+                    position: absolute;
+                    top: 105vh;
+                    left: 4vh;
+                    text-align: right;
+                    padding: 9px 116px;
+                    font-size: 25px;
+                    border-radius: 50px;
+                    border: 1px solid #ffffff;
+                    background-color: transparent;
+                    color: #ffffff;
+            }  
+        }
+                
+        .uno { 
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            #titulos {
+                padding-bottom: 6.5vh;
+                padding-left: 3vh;
+                grid-row: 4;
+                z-index: 4;
+                .fuente {
+                    font-family: 'PFRegalDisplayPro';
+                }
+              
+                .gris {
+                    color: #B4B7B7;
+                    font-size: 40px;
+                }
+        
+                .blanco{
+                    color: #ffffff;
+                    font-size: 80px;
+                }
+            }
+     
+            #linea {
+                grid-row: 5;
+                padding-top: 18vh;                    
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                column-gap: 30px;
+                                            
+                .entre {
+                    width: 31.25px;
+                    height: 5px;
+                    background-color: #B4B7B7;
+                    margin: 1vh 0;
+                    z-index: 4;
+                }
+            } 
+        }
+        
+        .seccionI {
+            width: 100%;
+            display: grid;
+            position: absolute;
+            top: 140%;
+            #flechado {
+                grid-column: 1 / span 3;
+                grid-row: 1;
+                width: 20px;
+                padding-bottom: 2vh;
+            }
+            padding-bottom: 9vh;
+        .galeriaI {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                grid-row: 2;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                                                                    
+                .segunda {
+                    grid-column: 1 / span 2;
+                }
+            
+                .tercera {
+                    grid-column: 3;
+                }
+                .escritorio {display: none;}
+                .primera {display: none;}
+                .I {display: none;}
+                .II {display: none;}
+                .textos {display: none;} 
+            }                
+        
+            .informacion {
+                grid-row: 3;
+                grid-column: 1 / span 3;
+                padding-top: 11vh;
+                .fuente {
+                    font-family: 'PFRegalDisplayPro';
+                }
+            
+                .textos {
+                    h3 {
+                        font-size: 30px;
+                        color: #DF991B;
+                        text-align: left;
+                        }
+                
+                    h2 {display: none;}
+                }
+            
+                .boton {
+                    .fuenteI {
+                        font-family: 'BrandonGrotesque';
+                    }
+                    .extremo {display: none;}
+                                            
+                    .tres {
+                        position: absolute;
+                        bottom: 75vh;
+                        left: 6vh;
+                        font-size: 25px;
+                        border: none;
+                        background-color: transparent;
+                        color: #df991b;
+                    }
+                }
+            }
+        }
+        
+        .seccionII {        
+            width: 100%;
+            position:absolute;
+            top: 95%;
+            .fuente {
+                font-family: 'PFRegalDisplayPro';
+            }
+            .titulo {
+            h4 {
+                font-size: 45px;
+                padding-bottom: 6vh; 
+                color: #000000;
+            }
+        
+            h5 {display: none;}
+            }
+            .mar {
+                width: 94%;
+                object-fit: cover;
+                padding-bottom: 3vh;
+                display: block;
+            }
+    
+            .opciones {display: none;}
+        }
+    }
+
+    footer {
+        position: absolute;
+        top: 408%;
+        width: 100%;
+        background: #000000;  .cuadro {display: block;}
+        z-index: -100;
+        
+        .cuadro {display: none;}
+    
+        .negro {
+            .enlaces {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 14vh 0 2vh 6vh;
+            color: #B4B7B7;
+            gap: 48px 17px;
+            .fuenteI {
+                font-family: 'BrandonGrotesque';
+            }
+            .primera, .ultima {
+            grid-column: span 2; 
+            align-self: self-end;
+            }
+
+            .primera {
+                color: #ffffff;
+                font-size: 25px;
+            }
+
+            .segunda {
+                font-size: 30px;
+            }
+
+            .tercera {
+                font-size: 25px;
+            }
+
+            .nm{display: none;}
+        
+            .es {
+            margin-top: 20px;
+            }
+
+            .tam {
+                font-size: 40px;
+                text-align: center;
+                color: #ffffff;
+            
+            }
+            .fuente {
+                font-family: 'PFRegalDisplayPro';
+            }
+            .al {
+                font-size: 30px;
+                padding-left: 6vh;
+            }
+        } 
+        }
+    }
+}
+

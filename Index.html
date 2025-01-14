@@ -1,71 +1,232 @@
-<!DOCTYPE html><!--tipo de documento-->
-<html lang="es"><!--Cambia el idioma del contenido de la página-->
-<head><!--Es la parte fija de la estructura no se visualiza en la página, sirve sólo para configuración de la página-->
-    <meta charset="UTF-8"><!--define los carácteres-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio19/11/24</title>
-    <!--<link rel="stylesheet" type="text/css" href="">-->
-</head>
-<body><!--Es la parte que se ve y modificar-->
-    <header><!--Es parte del body, es el encabezado, los navegadores se fijan en está parte-->
-        <h1>Frutas</h1><!--Es el título principal y se lo utiliza una sóla vez-->
-        <ul><!--realiza una lista desordenada-->
-           
-    </header>
-    <main> <!--Es la parte de mayor relevanci de la página-->
-    <sec><!--Secciona la página-->
-        <h2>Aplicación de la etiqueta section</h2><!--Es un encabezado de nivel 2, se puede utilizar varias veces en el body-->
-        <p>En está sección se utiliza la etiqueta de encabezado de segundo nivel, párrafo e imagen.</p><!--Se escribe un texto y ocupa todo el ancho de la página-->
-        <img src="./Imagenes/FrutasyVerduras/Frutas/pera.jpg" alt="CARPETA FUERA DE HTMLEs imagen de una pera, que es una fruta tropical, de textura lisa, su cáscara es de color verde y su interior en de color blanco, tiene semillas en su interior.">
+    <title>ProyectoPaolaAndrade</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="./mediaqueries.css">
+   </head>
+
+<body>
+  
+    <header>
+              <img id="fondo" src="Imagenes/Fondo.png">
+              <img id="fondomo" src="/Imagenes/FondoMo.jpg">
+                           
+              <nav>
+                <img id="logo" src="./Imagenes/LogoU.png" alt="">
+                
+                <div class="navegador">
+                    <div class="circulo"></div>
+
+                    <ul class="registro">
+                        <li id="log" class="fuenteI" ><a href="">LOG IN</a> </li>
+                        <div class="barv"></div>
+                        <li id="sign" class="fuenteI"><a href="">SIGN UP</a> </li>
+                    </ul>
         
-    </sec>
-    <sec>
-        <h3>Continuación de aplicación de etiquetas</h3><!--Es cabezado de nivel 3-->
-        <p>En está sección se utiliza las etiquetas de encabezado nivel 3, párrafo, anchor e imagen, button.</p>
-        <a href="www.yahoo.com">Para mayor detalle de uso de etiquetas aquí</a> <!--anchor se utiliza para crear un enlace y necesita del atributo href-->
-        <img src="pera.jpg" alt="La pera es una fruta tropical, de textura lisa, su cáscara es de color verde y su interior en de color blanco, tiene semillas en su interior.">
-        <a href="www.mediotiempo.com"> <button>medio tiempo.com</button> </a>
-        <button>Mi primer botón</button><!--Esta etiqueta sirve para crear un botón que sólo se visualiza en la página, no ocupa todo el ancho de la página-->     
-    </sec>
+                    <ul class="idioma">
+                        <li id="esp" class="fuenteI"><a href="">ESP</a> </li>
+                        <div class="barv"></div>
+                        <li id="eng" class="fuenteI"><a href="">ENG</a> </li>
+                    </ul>
+                                        
+                    <div class="menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+              </nav>
+    </header>
 
-<form id="suscripcion" action="yahoo.com/ec/ecuesta.mm">
-<label>nombre</label>
-<input type="text"placeholder="Instrucciones">
-<textarea>  
+    <main>
+        <img id="flecha" src="/Imagenes/FlechaBlanca.png" alt="">
+        <img id="lupa" src="/Imagenes/Lupa.png" alt="">
+        
+        <div id="redes">
+            <p class="fuenteI">FOLLOW</p>
+            <img src="/Imagenes/Red.png" alt="">
+            <img src="/Imagenes/Red.png" alt="">
+            <img src="/Imagenes/Red.png" alt="">
+            <img src="Imagenes/Red.png" alt="">
+            <img src="Imagenes/Red.png" alt="">
+            <div id="raya"></div>
+        </div>
 
-</textarea>
+        <div id="botones">
+            <button class="derecha fuenteI">Ex. Villa Budapest</button>
+            <button class="izquierda fuenteI">View all properties</button>
+        </div>
+        
+        <div class="uno">
+            <div id="titulos">
+                <h2 class="gris fuente">Luxury</h2>
+                <h3 class="blanco fuente">Real-Estate</h3>
+            </div>
+    
+            <div id="linea">  
+                <span class="entre"></span>
+                <span class="entre"></span>
+                <span class="entre"></span>
+            </div>        
+        </div> 
+        
+        <div class="seccionI"><!--uno-->
+            <div id="flechado">
+                <img src="/Imagenes/Fechadora.png" alt="">
+            </div>
 
-<input type="radio" value="1">
+            <div class="galeriaI">
+                <div class="primera escritorio">
+                    <img src="/Imagenes/imagen1.jpg" alt="">
+                </div>
+       
+            <div class="ultimas segunda fuente">
+                <img src="/Imagenes/imagen2.jpg" alt="">
+                <div class="textos I fuente">
+                    <h5>England</h5>
+                    <h4>Glasgow</h4>
+                </div>
+            </div>
 
-<!--Un opción para elegir-->
-<label> Genero</label>
-<br>
-<label>Mujer</label>
-<input name="genero" type="radio" value="1">
-<label>Hombre</label>
-<input name="genero" type="radio" value="1">
+            <div class="ultimas tercera">
+                <img class="mar" src="/Imagenes/imm1.jpg" alt=""> <!--uno-->
+                <img class="escritorio" src="/Imagenes/imagen3.jpg" alt="">
+                <div class="textos II fuente">
+                    <h5 class="textos III">France</h5>
+                    <h4 class="textos IV">Marseilles</h4> 
+               </div>
+            </div>
+        </div>
+        
+        <div class="informacion">
+            <div class="textos fuente">
+                <h3> Worldwide gallery</h4>
+                <h2>Properties for sale</h2>
+            </div>
+            
+            <div class="boton">
+                <button class="extremo iz fuenteI">PREV</button>
+                <button class="tres fuenteI">View all properties</button>
+                <button class="extremo de fuenteI">NEXT</button>
+            </div>
+        </div>
+        
+        <div class="seccionII fuente"><!--dos-->
+            <div class="titulo fuente">
+                <h5>Luxury properties</h5>
+                <h4>Developments</h4>
+            </div>
 
-<!--Varias opciones a la vez-->
-<label> intereses</label>
-<br>
-<label>Fut</label>
-<input name="intereses" type="checkbox" value="1">
-<label>Natacion</label>
-<input name="intereses" type="checkbox" value="2">
-<label>Ajedrez</label>
-<input name="intereses" type="checkbox" value="3">
+            <div class="imagenesmo" ><!--resto de imagenes-->
+                <img class="mar" src="/Imagenes/mm2.jpg" alt="">
+                <img class="mar" src="/Imagenes/mm3.jpg" alt="">
+                <img class="mar" src="/Imagenes/mm4.jpg" alt="">
+            </div>
+     
+            <div class="opciones fuente">
+                <div> 
+                    <img src="/Imagenes/im1.jpg" alt="">
+                    <h3>The Surf Row</h3>
+                    <h4>Surfside</h4>
+                </div>
+     
+                <div>        
+                    <img src="Imagenes/im2.jpg" alt="">  
+                    <h3>Indigo</h3>
+                    <h4>Vero Beach</h4>
+                </div>
 
-<!--como poner un botón-->
-<input type="button" value="Haz click">
+                <div>            
+                    <img src="/Imagenes/im3.jpg" alt="">  
+                    <h3>Rosewood - Baha Mar</h3>
+                    <h4>Nassau, the Bahamas</h4>
+                </div>
+            
+                <div>
+                    <img src="/Imagenes/im4.jpg" alt="">
+                    <h3>St. Regis - The Astor Tower</h3>
+                    <h4>Brickell, Miami</h4>
+                </div>   
 
-</form>
+                <div>
+                    <img src="/Imagenes/im5.jpg" alt="" srcset="">
+                    <h3>Giralda Place</h3>
+                    <h4>Coral Gables</h4>
+                </div>
 
+                <div>
+                    <img src="/Imagenes/im6.jpg" alt="">
+                    <h3>St. Regis - The William Tower</h3>
+                    <h4>Brickell, Miami</h4>
+                </div>
 
-    </main>
-    <Footer>
-        <h3>Contancto</h3><!--Es el pie de página, información que debe estar, pero no es lo suficientemente relvante para estar en main o header-->
-        <p>La información que contiene está página es de uso reservado, para mayor información comunicarse al correo plac912@yahoo.es</p>
-    </Footer>
-   
+                <div>
+                    <img src="/Imagenes/im7.jpg" alt="">
+                    <h3>Solterre at Cockleshell Bay</h3>
+                    <h4>St. Kitts and nevis</h4>
+                </div>
+           
+                <div>
+                    <img src="/Imagenes/im8.jpg" alt="">
+                    <h3>Urbin</h3>
+                    <h4>Coconut Grove</h4>
+                </div>                
+            </div> 
+        </div>
+    </main>        
+    
+    <footer>
+        <div class="cuadro fuente" >
+            <div class="texto fuente">
+                <h5>Join the list</h5>
+                <h4>Unlock <br> the exclusive world</h4>
+            </div> 
+
+            <div class="segunda fuenteI">
+                <p class="fuenteI">Name:</p>
+                <input type="email" placeholder="Ex. name@mail.com ">
+                <button class="fuenteI">Submit</button>
+            </div>
+        </div>
+
+        <div class="negro">
+            <div class="enlaces">
+                <div class="primera fuenteI">
+                    <ul>
+                        <li>Become a New Uniq Artist</li>
+                        <li>Become a Commercial Partner</li>
+                    </ul>
+                </div>
+                <div class="medio segunda fuenteI">
+                    <ul>
+                        <li class="es">Suites</li>
+                        <li class="es">Cities</li>
+                        <li class="es">Villas</li>
+                    </ul>
+                </div>
+                <div class="medio tercera fuenteI">
+                    <ul>
+                        <li id="colordife" class="es">Houses</li>
+                        <li class="es">Apartaments</li>
+                        <li id="separado" class="es">Contact us</li>
+                    </ul>
+                </div>
+                <div class="ultima">
+                    <ul>
+                        <li class="fuente nm es">Call Center</li>
+                        <li class="tam fuente es">+52 55 6840 4000</li>
+                        <li id="espacio" class="fuenteI es al">concierge@uniqluxury.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="fuenteI">Copyright © 2025</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+

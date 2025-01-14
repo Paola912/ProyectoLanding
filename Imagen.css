@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+   
+}
+
+#Fondo {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+#topbar{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(10, 19, 1, 0.78);
+}
+#titulos {
+    position: absolute;
+    top: 100px;
+    margin-left: 5vw;
+    color: white;
+    button {
+        background-color: transparent;
+        border-radius: 50px;
+        border-color: white;
+        padding: 15px;
+        border: 1px solid;
+
+    }
+
+}
